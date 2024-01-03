@@ -16,16 +16,16 @@ describe('API Pact test', () => {
   describe('retrieving a product', () => {
     test('ID 10 exists', async () => {
       // Arrange
-      const expectedProduct = {
-        id: '10',
-        type: 'CREDIT_CARD',
-        name: '28 Degrees',
-        color: 'red',
-        price: 'n/a'
-      };
+      // const expectedProduct = {
+      //   id: '10',
+      //   type: 'CREDIT_CARD',
+      //   name: '28 Degrees',
+      //   color: 'red',
+      //   price: 'n/a'
+      // };
 
       // Uncomment to see this fail
-      // const expectedProduct = { id: '10', type: 'CREDIT_CARD', name: '28 Degrees', price: 30.0, newField: 22}
+      const expectedProduct = { id: '10', type: 'CREDIT_CARD', name: '28 Degrees', price: 30.0, newField: 22}
 
       mockProvider
         .given('a product with ID 10 exists')
